@@ -1,11 +1,11 @@
 array = []
 
-# def line(array)
-#   if array.count == 0
-#     puts "The line is currently empty."
-#   else
-#     puts array.each_with_index{|element, index| "#{index.to_i + 1}. #{element}"}
-# end
+def line(array)
+  if array.count == 0
+    puts "The line is currently empty."
+  else
+    puts array.each_with_index{|element, index| "#{index.to_i + 1}. #{element}"}
+end
 
 def take_a_number(name_string_array, name_string)
   name_string_array << name_string
