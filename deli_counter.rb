@@ -1,14 +1,28 @@
-array = []
-
 def line(array)
-  if array.count == 0
-    return "The line is currently empty."
-  else
-    "The line is currently:" + array.each_with_index{ |element, index| "#{index.to_i + 1}. #{element}" }
+
+  if array == []
+    puts "The line is currently empty."
   end
+
+  if array != []
+    print "The line is currently: "
+  g = array.each_with_index do |element, index|
+      e = element.to_s
+      i = (index.to_i + 1).to_s
+
+      print i + ". " + e + " "
+    end
+
+  end
+
 end
 
-def take_a_number(name_string_array, name_string)
-  name_string_array << name_string
-  "Welcome, #{name_string}.  You are number #{name_string_array.length} in line."
-end
+
+
+
+
+
+# def take_a_number(name_string_array, name_string)
+#   name_string_array << name_string
+#   "Welcome, #{name_string}.  You are number #{name_string_array.length} in line."
+# end
