@@ -4,12 +4,12 @@ def line(array)
     puts "The line is currently empty."
 
   else
-    print "The line is currently: "
-    array.each_with_index do |element, index|
+    g = "The line is currently: "
+    g << array.each_with_index do |element, index|
       e = element.to_s
       i = (index.to_i + 1).to_s
 
-      print i + ". " + e + " "
+       i + ". " + e + " "
     end
 
   end
