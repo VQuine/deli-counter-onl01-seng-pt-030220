@@ -4,7 +4,7 @@ def line(array)
   if array.count == 0
     puts "The line is currently empty."
   else
-    return array.each_with_index{|element, index| "#{index.to_i + 1}. #{element}"}
+    puts array.each_with_index{|element, index| "#{index.to_i + 1}. #{element}"}
   end
 end
 
